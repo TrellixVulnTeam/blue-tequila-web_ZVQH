@@ -432,11 +432,13 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 16px; }
   .detail-products .detail-container {
     margin-bottom: 32px; }
-    .detail-products .detail-container .detail-info h2 {
-      font-size: 1.6rem;
-      margin-bottom: 16px; }
-    .detail-products .detail-container .detail-info p.price {
-      font-size: 1.2rem; }
+    .detail-products .detail-container .detail-info {
+      padding-top: 0; }
+      .detail-products .detail-container .detail-info h2 {
+        font-size: 1.6rem;
+        margin-bottom: 16px; }
+      .detail-products .detail-container .detail-info p.price {
+        font-size: 1.2rem; }
     .detail-products .detail-container .detail-image img {
       width: 70%; }
   .detail-products .button-prev-next {
@@ -469,7 +471,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-bottom: 32px;
   margin-top: 8px;
   font-size: 1.2rem;
-  word-break: break-all;
+  word-break: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -511,7 +513,7 @@ input[type="number"]::-webkit-outer-spin-button {
             line-height: 40px;
             margin-bottom: 0;
             letter-spacing: 1px;
-            word-break: break-all;
+            word-break: break-word;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
@@ -707,7 +709,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 767px) {
   .detail-products .cocktail-button-prev-next {
-    top: 180px; } }
+    top: 180px; }
+  .detail-products .cocktail-container .cocktail-info h2 {
+    margin-top: 16px; } }
 
 @media screen and (min-width: 1200px) {
   .detail-products .cocktail-button-prev-next {
@@ -948,7 +952,7 @@ img:not(.logo a img) {
     .pro-items .pro-info p {
       margin-bottom: 32px;
       line-height: 50px;
-      word-break: break-all;
+      word-break: break-word;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
@@ -1296,7 +1300,7 @@ footer {
     .intro p {
       margin-top: 20px;
       text-align: left;
-      word-break: break-all;
+      word-break: break-word;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
@@ -1310,7 +1314,7 @@ footer {
       text-align: left;
       padding: 16px; }
       .blog-st .blog-content p, .blog-sd .blog-content p {
-        word-break: break-all;
+        word-break: break-word;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
@@ -1332,6 +1336,8 @@ footer {
   .pro-items .pro-info {
     text-align: left;
     padding: 32px 16px; }
+    .pro-items .pro-info h2 {
+      margin-top: 0; }
     .pro-items .pro-info .pro-btn {
       width: 100%;
       flex-flow: row wrap; }
