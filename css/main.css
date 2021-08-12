@@ -107,9 +107,9 @@ header {
       font-weight: 600;
       font-size: 1.1rem;
       text-shadow: 0px 0px 1px #000;
-      transition-duration: .4s; }
+      transition-duration: 0.4s; }
       .nav-content .menu .menu-list .menu-items .menu-links:hover {
-        animation: itemHover .25s ease-out forwards;
+        animation: itemHover 0.25s ease-out forwards;
         text-shadow: initial; }
   .nav-content .user {
     display: flex;
@@ -167,10 +167,10 @@ header {
     background-color: #fff; }
   .top,
   .bot {
-    transition-duration: .3s; }
+    transition-duration: 0.3s; }
   .mid {
     margin: 5px 0;
-    transition-duration: .3s; }
+    transition-duration: 0.3s; }
   .mobile-menu {
     top: 0;
     left: 0;
@@ -185,7 +185,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #364061;
-    transition-duration: .4s;
+    transition-duration: 0.4s;
     transform: translate3d(0, -100%, 0);
     z-index: 98; }
     .mobile-menu.show {
@@ -199,7 +199,7 @@ header {
     margin: 0;
     padding: 0;
     transition: all 0.25s ease;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transform: translate3d(600px, 0, 0); }
     .mobile-items.show {
       transform: translate3d(0, 0, 0); }
