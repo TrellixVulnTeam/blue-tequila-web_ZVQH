@@ -1,0 +1,284 @@
+@include tablet {
+  .home-swiper > div {
+    @include marginMd;
+  }
+  .search > div {
+    padding-right: $distance2;
+  }
+  .form-search {
+    input:focus ~ span {
+      left: 21px;
+    }
+  }
+  .intro {
+    margin-top: 8%;
+    h1 {
+      font-size: $font-size3;
+    }
+  }
+  .blog {
+    padding: 0;
+    &-st {
+      margin-bottom: $distance1;
+      flex-direction: column-reverse;
+    }
+    &-st,
+    &-sd {
+      @include marginMd;
+    }
+  }
+  .products {
+    .he-tab {
+      @include marginMd;
+      ul.tabs {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        li {
+          margin: $distance2;
+        }
+      }
+    }
+  }
+  .products > h2 {
+    margin-bottom: $distance2;
+  }
+  .pro-items .pro-info .pro-btn {
+    justify-content: flex-start;
+  }
+  .pro-items .pro-info .pro-btn button:first-child {
+    margin-right: 40px;
+  }
+  .references {
+    padding: 0 $distance2;
+  }
+  .cocktail-recipe,
+  .detail-pro {
+    padding: 0 $distance2;
+    overflow: hidden;
+    h2 {
+      margin-top: $distance1;
+    }
+  }
+  .cocktail-recipe
+    .recipe-list
+    .recipe-items
+    a
+    .recipe-content
+    h3.cocktail-name {
+    text-align: center;
+    padding: $distance2;
+    font-size: $font-size3;
+  }
+  .sign-up-form {
+    padding: 0 $distance2;
+  }
+  footer {
+    padding: $distance2;
+    .footer-left {
+      padding: 0;
+      flex-flow: row wrap;
+      margin-bottom: 0;
+      .footer-logo {
+        width: 240px;
+      }
+      .social-btn {
+        margin-top: 8px;
+        li {
+          margin: 0 0 0 $distance1;
+          align-items: flex-start;
+          a {
+            ion-icon {
+              @include size(32px);
+            }
+          }
+        }
+      }
+    }
+    .footer-right {
+      margin: 0;
+      padding: 0;
+      .footer-list {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@include mobile {
+  h2 {
+    font-size: $font-size3;
+  }
+  .products {
+    margin-top: 0;
+  }
+  .blog > h2,
+  .references h2,
+  .products h2,
+  .cocktail-recipe > h2 {
+    margin-top: $distance1;
+    margin-bottom: $distance2;
+    font-size: $font-size3;
+  }
+  .search > div {
+    padding-right: 0;
+  }
+  .form-search {
+    margin-top: calc(50px + 30px);
+    padding: 0 $distance2;
+    input {
+      height: 40px;
+      padding-left: $distance2;
+      &:focus ~ span {
+        left: 31px;
+        transform: translateY(-46px);
+      }
+    }
+    span {
+      left: 31px;
+    }
+    ion-icon {
+      right: 21px;
+    }
+  }
+  .intro {
+    margin-top: 20%;
+    h1 {
+      font-size: $font-size3;
+    }
+    p {
+      margin-top: 20px;
+      text-align: left;
+      @include wordBreak;
+      font-size: $font-size1;
+      margin-bottom: $distance1;
+    }
+  }
+  .blog {
+    &-st,
+    &-sd {
+      margin: 0;
+      .blog-content {
+        text-align: left;
+        padding: $distance2;
+        p {
+          @include wordBreak;
+        }
+      }
+    }
+    &-st {
+      margin-bottom: $distance1;
+    }
+  }
+  .products {
+    .he-tab {
+      margin: $distance1 0 0 0;
+      ul.tabs {
+        justify-content: space-evenly;
+        li {
+          margin: 0 0 $distance2 0;
+          width: 164px;
+        }
+      }
+    }
+  }
+  .pro-items {
+    .pro-image {
+      padding: $distance1 0 $distance2 0;
+      img {
+        width: 300px;
+      }
+    }
+    .pro-info {
+      text-align: left;
+      padding: $distance1 $distance2;
+      h2 {
+        margin-top: 0;
+      }
+      .pro-btn {
+        width: 100%;
+        flex-flow: row wrap;
+        a {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: $distance2;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cocktail-recipe,
+  .detail-pro {
+    padding: 0 $distance2;
+    p {
+      text-align: justify;
+    }
+  }
+  .cocktail-recipe .recipe-list .recipe-items {
+    margin-bottom: $distance2;
+  }
+  .references {
+    padding: 0 $distance2;
+    h2 {
+      line-height: 38px;
+    }
+    .all-pro-btn a {
+      width: 100%;
+    }
+  }
+  .sign-up-form {
+    h2 {
+      line-height: 36px;
+      br {
+        display: block;
+      }
+    }
+  }
+  .form-field .form-input {
+    height: 50px;
+  }
+  footer {
+    padding: $distance2;
+    overflow: hidden;
+    .footer-content {
+      height: 290px;
+      margin-bottom: 0;
+    }
+    .footer-left {
+      flex-direction: column;
+      .footer-logo {
+        margin-bottom: $distance2;
+        width: 180px;
+      }
+      .social-btn {
+        margin: 0;
+        li {
+          margin-left: 0;
+          margin-right: 24px;
+          a ion-icon {
+            @include size(25px);
+          }
+        }
+      }
+    }
+    .footer-right {
+      .footer-list {
+        justify-content: center;
+        .footer-item {
+          font-size: $font-size1;
+        }
+      }
+    }
+    span {
+      font-size: 1rem;
+      br {
+        display: block;
+      }
+      em {
+        display: none;
+      }
+    }
+  }
+}
