@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Wine Shop Online, Blue Tequila Website",
   "main": "index.js",
+  "homepage": "https://tuyenf.github.io/blue-tequila-web",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "tuyenf",
   "license": "ISC",
@@ -19,6 +21,5 @@
   },
   "bugs": {
     "url": "https://github.com/tuyenf/blue-tequila-web/issues"
-  },
-  "homepage": "https://github.com/tuyenf/blue-tequila-web#readme"
+  }
 }
