@@ -1,0 +1,96 @@
+.detail-products {
+  .detail-container {
+    .cocktail-info {
+      border: none;
+      padding-right: $distance2;
+      @include flex(flex-start, flex-start, column, nowrap);
+      h2 {
+        margin-bottom: $distance1;
+      }
+      .ingredients {
+        margin-bottom: $distance1;
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .instruction {
+        border-top: thin solid #ddd;
+        padding: $distance1 0 0 $distance1;
+        margin: 0 0 0 -32px;
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .cocktail-image {
+      padding-top: 0;
+      padding-left: $distance2;
+      padding-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .cocktail-container {
+    margin-top: 0;
+  }
+  .cocktail-button-prev-next {
+    top: 280px;
+  }
+}
+.cocktail-recipe {
+  .recipe-list {
+    .recipe-items {
+      .recipe-item-current {
+        border: thin solid $primary-color;
+      }
+    }
+  }
+  ul.cocktail-list {
+    margin-bottom: 34px;
+  }
+}
+
+@include tablet {
+  .detail-products {
+    .cocktail-container {
+      margin-top: 0;
+      margin-bottom: 0;
+      .cocktail-image {
+        padding-left: 0;
+      }
+      .cocktail-info {
+        padding-left: 0;
+        padding-right: 0;
+        h2 {
+          margin: 0 0 $distance2 $distance2;
+        }
+        .ingredients {
+          margin: 0 0 $distance2 $distance2;
+        }
+        .instruction {
+          width: 100%;
+          padding-left: 0;
+          padding-top: $distance2;
+          margin-left: 0;
+          p {
+            margin-left: $distance2;
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .detail-products .cocktail-button-prev-next {
+    top: 180px;
+  }
+  .detail-products .cocktail-container .cocktail-info h2 {
+    margin-top: $distance2;
+  }
+}
+@include highResolution {
+  .detail-products .cocktail-button-prev-next {
+    top: 320px;
+  }
+}

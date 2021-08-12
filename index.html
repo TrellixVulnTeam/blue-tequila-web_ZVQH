@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>BLUE TEQUILA STUDIO</title>
+  </head>
+  <body>
+    <!-- MOBILE MENU -->
+    <div class="n3v d-lg-none">
+      <div class="top"></div>
+      <div class="mid"></div>
+      <div class="bot"></div>
+    </div>
+    <div class="mobile-menu d-lg-none">
+      <ul class="mobile-menu-list">
+        <li class="mobile-items current"><a href="index.html">TRANG CHỦ</a></li>
+        <li class="mobile-items"><a href="blog.html">BLOG</a></li>
+        <li class="mobile-items cocktails"><a href="#cocktail">COCKTAIL</a></li>
+        <li class="mobile-items"><a href="#">SẢN PHẨM</a></li>
+        <li class="mobile-items"><a href="#">VỀ CHÚNG TÔI</a></li>
+        <li class="mobile-items">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+      </ul>
+    </div>
+    <!-- HEADER -->
+    <header>
+      <video controls muted loop poster="./img/home_bg.jpg">
+        <source src="./img/video.mp4" type="video/mp4" />
+      </video>
+      <!-- Navbar -->
+      <nav>
+        <div class="nav-bar container-lg">
+          <div class="nav-content row">
+            <div class="logo col-lg-3 col-md-3">
+              <a href="index.html"
+                ><img src="./img/Logo.svg" alt="Logo" srcset=""
+              /></a>
+            </div>
+            <div class="mobile-user d-lg-none d-md-none">
+              <a href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+              <span> | </span>
+              <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+            <div class="menu col-lg-6">
+              <ul class="menu-list">
+                <li class="menu-items">
+                  <a href="index.html" class="menu-links">TRANG CHỦ</a>
+                </li>
+                <li class="menu-items">
+                  <a href="blog.html" class="menu-links">BLOG</a>
+                </li>
+                <li class="menu-items">
+                  <a href="#" class="menu-links">SẢN PHẨM</a>
+                </li>
+                <li class="menu-items">
+                  <a href="#cocktail" class="menu-links">COCKTAIL</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-lg-none"></div>
+            <div class="user col-lg-3 col-md-4">
+              <a href="#">Tài khoản</a>
+              <p>|</p>
+              <a href="#">Giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Search -->
+      <div class="search container-lg">
+        <div class="row">
+          <div class="col-lg-8 col-md-8"></div>
+          <div class="form-search col-lg-4 col-md-4">
+            <form action="">
+              <input type="text" placeholder=" " name="" id="" />
+              <span>Tìm kiếm</span>
+              <ion-icon name="search-outline"></ion-icon>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Home Swiper -->
+      <div class="home-swiper container-lg">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide first-slide">
+              <div class="intro">
+                <h1>LỊCH SỬ TEQUILA</h1>
+                <p>
+                  Cách đây 25 năm, nhà chưng cất bậc thầy Don Carlos và gia đình
+                  ông đã trồng cây thùa đầu tiên ở Cao nguyên Jalisco Mexico với
+                  kế hoạch tạo ra một loại rượu Tequila từ nông trại đến khi
+                  được đóng thành những chai thuỷ tinh hoàn hảo.
+                </p>
+                <a href="#" class="button-primary">XEM THÊM</a>
+              </div>
+            </div>
+            <div class="swiper-slide second-slide">
+              <div class="intro">
+                <h1>CÂU CHUYỆN CẢM HỨNG</h1>
+                <p>
+                  Theo truyền thuyết Nahuatl, nếu bạn may mắn cầm được con bướm
+                  trong tay, hãy nhớ thì thầm với nó mong muốn sâu sắc nhất của
+                  bạn. Vì một khi được thả ra, con bướm sẽ mang điều ước của bạn
+                  đến Xochiquetzal và điều ước sẽ thành hiện thực.
+                </p>
+                <a href="#" class="button-primary">XEM THÊM</a>
+              </div>
+            </div>
+            <div class="swiper-slide third-slide">
+              <div class="intro">
+                <h1>QUY TRÌNH SẢN XUẤT</h1>
+                <p>
+                  Nguyên liệu duy nhất chúng tôi sử dụng là cây thùa xanh trưởng
+                  thành, men tự nhiên và nước giếng được lọc từ núi lửa ở
+                  Mexico. Tequila của chúng tôi đều được làm thủ công, trồng
+                  trong vườn và được sản xuất theo từng mẻ nhỏ.
+                </p>
+                <a href="#" class="button-primary">XEM THÊM</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- BLOG -->
+    <section class="blog container-lg">
+      <h2>BLOG</h2>
+      <div class="blog-st row">
+        <div class="blog-content col-lg-6">
+          <div class="blog-detail">
+            <h2>TEQUILA SUNRISE</h2>
+            <p>
+              Tequila là thành phần tuyệt hảo để điều chế Cocktail bởi nó rất dễ
+              phối hợp với các nguyên liệu khác. Một trong những loại Cocktail
+              đặc biệt hấp dẫn và được nhiều người ưa chuộng nhất đó là cocktail
+              Tequila Sunrise.
+            </p>
+          </div>
+          <a href="#" class="button-secondary">XEM THÊM</a>
+        </div>
+        <div class="blog-image col-lg-6">
+          <img src="./img/blog-1.jpg" alt="Blog" srcset="" />
+        </div>
+      </div>
+      <div class="blog-sd row">
+        <div class="blog-image col-lg-6">
+          <img src="./img/blog-2.jpg" alt="Blog" srcset="" />
+        </div>
+        <div class="blog-content col-lg-6">
+          <div class="blog-detail">
+            <h2>CÁCH UỐNG TEQUILA</h2>
+            <p>
+              Một thức uống chất lượng thôi chưa đủ, để cảm nhận trọn vẹn hương
+              vị của nó ta phải biết cách thưởng thức sao cho đúng. Hiện nay có
+              hai cách thưởng thức Tequila phổ biến nhất là uống trực tiếp và
+              uống Teuila với chanh và muối.
+            </p>
+          </div>
+          <a href="#" class="button-secondary">XEM THÊM</a>
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCTS -->
+    <section class="products container-lg">
+      <h2>TEQUILA CỦA CHÚNG TÔI</h2>
+      <div class="he-tab">
+        <ul class="tabs">
+          <li class="cur-tab">CRISTALINO</li>
+          <li>BLACK BARREL</li>
+          <li>PLATA</li>
+          <li>LIME SHOT</li>
+          <li>REPOSADO</li>
+          <li>ANEJO</li>
+        </ul>
+        <div class="content-tab container-lg">
+          <div class="row pro-items">
+            <div class="col-lg-6 pro-image">
+              <img src="./img/Cristalino.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-6 pro-info">
+              <h2>CRISTALINO TEQUILA</h2>
+              <span><strong>Nồng độ: </strong>35%</span>
+              <p>
+                <strong>Hương vị: </strong>Cảm giác ban đầu khi mới uống vào là
+                vị ngọt ngào trên mũi và vòm miệng, kết thúc với một số vị cay
+                từ Agave.
+              </p>
+              <div class="pro-btn">
+                <a href="cristalino.html" class="button-primary">CHI TIẾT</a>
+                <button class="button-third">THÊM VÀO GIỎ HÀNG</button>
+              </div>
+            </div>
+          </div>
+          <div class="row pro-items">
+            <div class="col-lg-6 pro-image">
+              <img src="./img/Blackbarrel.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-6 pro-info">
+              <h2>BLACK BARREL</h2>
+              <span><strong>Nồng độ: </strong>35%</span>
+              <p>
+                <strong>Hương vị: </strong>Có hương hoa, mùi cam quýt và một
+                chút vị ngọt có tác dụng làm tròn vị. Dư vị cuối là một chút vị
+                của tiêu đen.
+              </p>
+              <div class="pro-btn">
+                <a href="black-barrel.html" class="button-primary">CHI TIẾT</a>
+                <button class="button-third">THÊM VÀO GIỎ HÀNG</button>
+              </div>
+            </div>
+          </div>
+          <div class="row pro-items">
+            <div class="col-lg-6 pro-image">
+              <img src="./img/Plata.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-6 pro-info">
+              <h2>PLATA TEQUILA</h2>
+              <span><strong>Nồng độ: </strong>40%</span>
+              <p>
+                <strong>Hương vị: </strong>Ban đầu có vị ngọt của thảo mộc bị
+                nghiền nát, tiếp đó là vị cay nhẹ nơi đầu lưỡi và kết thúc là vị
+                nồng của Agave.
+              </p>
+              <div class="pro-btn">
+                <a href="plata.html" class="button-primary">CHI TIẾT</a>
+                <button class="button-third">THÊM VÀO GIỎ HÀNG</button>
+              </div>
+            </div>
+          </div>
+          <div class="row pro-items">
+            <div class="col-lg-6 pro-image">
+              <img src="./img/Limeshot.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-6 pro-info">
+              <h2>LIME SHOT</h2>
+              <span><strong>Nồng độ: </strong>38%</span>
+              <p>
+                <strong>Hương vị: </strong>Có vị của cây thùa kết hợp cùng một
+                chút tiêu, mùi hương bưởi, táo xanh và cuối cùng là hương hạnh
+                nhân.
+              </p>
+              <div class="pro-btn">
+                <a href="lime-Shot.html" class="button-primary">CHI TIẾT</a>
+                <button class="button-third">THÊM VÀO GIỎ HÀNG</button>
+              </div>
+            </div>
+          </div>
+          <div class="row pro-items">
+            <div class="col-lg-6 pro-image">
+              <img src="./img/Reposado.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-6 pro-info">
+              <h2>REPOSADO TEQUILA</h2>
+              <span><strong>Nồng độ: </strong>36%</span>
+              <p>
+                <strong>Hương vị: </strong>Có mùi khói và vị rất dịu từ những
+                thùng gỗ trước đó đã làm những loại rượu khác như Irish Whiskey,
+                Scotch Whisky.
+              </p>
+              <div class="pro-btn">
+                <a href="reposado.html" class="button-primary">CHI TIẾT</a>
+                <button class="button-third">THÊM VÀO GIỎ HÀNG</button>
+              </div>
+            </div>
+          </div>
+          <div class="row pro-items">
+            <div class="col-lg-6 pro-image">
+              <img src="./img/Anejo.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-6 pro-info">
+              <h2>ANEJO TEQUILA</h2>
+              <span><strong>Nồng độ: </strong>40%</span>
+              <p>
+                <strong>Hương vị: </strong> Vị phức tạp kết hợp giữa cây thùa,
+                caramel, vani, bơ thực vật cùng với đào, hoa cam, nhục đậu khấu
+                và nho khô.
+              </p>
+              <div class="pro-btn">
+                <a href="anejo.html" class="button-primary">CHI TIẾT</a>
+                <button class="button-third">THÊM VÀO GIỎ HÀNG</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT REFERENCES -->
+    <section class="references container-lg">
+      <div class="reference-content">
+        <h2>DÒNG MARGARITA TEQUILA</h2>
+        <div class="reference-item">
+          <img src="./img/Margarita.png" alt="Margarita" />
+        </div>
+        <div class="all-pro-btn">
+          <a href="#" class="button-secondary">TẤT CẢ SẢN PHẨM</a>
+        </div>
+        <div class="border-bottom"></div>
+      </div>
+    </section>
+    <!-- COCKTAIL RECIPES -->
+    <section id="cocktail" class="cocktail-recipe container-lg">
+      <h2>CÔNG THỨC COCKTAIL</h2>
+      <p>
+        Khám phá những công thức pha chế cocktail từ rượu Tequila của chúng tôi
+      </p>
+      <ul class="recipe-list row">
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="paloma.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">PALOMA</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-1.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="margarita.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">MARGARITA</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-2.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="acapulco.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">ACAPULCO</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-3.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="brave-bull.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">BRAVE BULL</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-4.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="manhattan.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">MANHATTAN</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-5.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="old-fashion.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">OLD FASHIONED</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-6.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="bandera.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">BANDERA</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-7.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="recipe-items col-lg-3 col-md-6">
+          <a href="sangrita.html">
+            <div class="recipe-content">
+              <h3 class="cocktail-name">SANGRITA</h3>
+              <div class="recipe-img">
+                <img src="./img/cocktail-8.jpg" alt="Cocktail Recipe" />
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="border-bottom"></div>
+    </section>
+    <!-- SIGN UP FORM -->
+    <section class="sign-up-form container-lg">
+      <h2>ĐĂNG KÝ ĐỂ NHẬN <br />ƯU ĐÃI MỚI NHẤT</h2>
+      <form action="">
+        <div class="form-field">
+          <input type="text" name="" placeholder=" " class="form-input" />
+          <label for="name" class="form-label">Họ và tên</label>
+        </div>
+        <div class="form-field">
+          <input type="email" name="" placeholder=" " class="form-input" />
+          <label for="email" class="form-label">Email</label>
+        </div>
+        <div class="form-field">
+          <input type="tel" name="" placeholder=" " class="form-input" />
+          <label for="phonenumber" class="form-label">Số điện thoại</label>
+        </div>
+        <button class="sign-up-btn button-secondary">ĐĂNG KÝ</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container-lg">
+        <div class="footer-content row">
+          <div class="footer-left col-lg-4 col-md-12">
+            <div class="footer-logo">
+              <a href="index.html"
+                ><img src="./img/Logo.svg" alt="BLUE TEQUILA" srcset=""
+              /></a>
+            </div>
+            <ul class="social-btn">
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/tuyenf/"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-right col-lg-8">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="blog.html" class="footer-links">Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#cocktail" class="footer-links">Cocktail</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-links">Sản phẩm</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-links">Về chúng tôi</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-links">Dịch vụ khách hàng</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-links">Chính sách bảo mật</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          >Copyright &copy 2021 Blue Teuqila <em>-</em><br />
+          Make your life more flavorful</span
+        >
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
