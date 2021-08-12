@@ -1,0 +1,234 @@
+// New Blog
+.blg-img {
+  margin-bottom: $distance2;
+  img {
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+}
+.blg-above {
+  p {
+    margin-bottom: $distance1;
+    margin-top: 8px;
+    font-size: $font-size2;
+    @include wordBreak;
+    text-align: justify;
+  }
+}
+// MAIN
+.blg {
+  padding: 0;
+  margin-bottom: $distance1;
+  ul.blg-container:first-child {
+    margin-bottom: 34px;
+  }
+  ul.blg-container {
+    padding: 0;
+    h2 {
+      margin-bottom: $distance1;
+      color: $primary-color;
+      text-align: center;
+    }
+    .blg-content {
+      padding: 0;
+      .blg-detail {
+        cursor: pointer;
+        padding: $distance2;
+        color: $primary-color;
+        border-radius: 4px;
+        padding: $distance1;
+        transition-duration: 0.6s;
+        background-color: $background-color;
+        margin: 0 $distance2 $distance2 $distance2;
+        border: thin solid rgba($primary-color, 0.2);
+        @include flex(stretch, flex-start, column, nowrap);
+        .blg-above {
+          margin-bottom: $distance1;
+          h3 {
+            line-height: 40px;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            @include wordBreak;
+          }
+        }
+        .fixed-blg {
+          margin: auto -32px 0 -32px;
+          padding-left: $distance1;
+          padding-right: $distance1;
+          border-top: thin solid #ddd;
+          .viewers {
+            display: flex;
+            align-items: center;
+            margin-bottom: $distance2;
+            margin-top: $distance1;
+            ion-icon {
+              @include size(28px, 28px);
+            }
+            p {
+              margin-bottom: 0;
+              margin-left: 8px;
+              font-size: $font-size2;
+            }
+          }
+          .blg-below {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            font-size: $font-size2;
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+        &:hover {
+          color: $black-lighter;
+          border-color: transparent;
+          box-shadow: 0 25px 35px -5px rgba($primary-color, 0.4);
+        }
+      }
+      .new-blg-detail {
+        .new-blg-above {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .older-btn {
+    position: relative;
+    .older-link {
+      color: $primary-color;
+      display: flex;
+      cursor: pointer;
+      ion-icon {
+        @include size(28px);
+      }
+      span {
+        font-size: $font-size2;
+      }
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+@include tablet {
+  .blg {
+    ul.blg-container:first-child {
+      margin-bottom: 18px;
+    }
+    ul.blg-container {
+      margin: 0;
+      padding: 0 $distance2;
+      h2 {
+        padding: 0;
+      }
+      .blg-content {
+        .blg-detail {
+          padding: $distance2;
+          margin: 0 0 $distance1 0;
+          .blg-above {
+            margin-bottom: $distance2;
+            p {
+              margin-bottom: 0;
+            }
+          }
+          .fixed-blg {
+            padding: $distance2 $distance2 0 $distance2;
+            margin: auto -16px 0 -16px;
+            .viewers {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .older-btn {
+    .older-link {
+      margin-left: $distance2;
+    }
+  }
+}
+@include mobile {
+  .blg {
+    margin-top: 0;
+    margin-bottom: $distance2;
+    ul.blg-container:first-child {
+      margin-bottom: 0;
+    }
+    ul.blg-container {
+      margin-bottom: 0;
+      h2 {
+        margin-bottom: $distance2;
+      }
+      .blg-content {
+        .new-blg-detail {
+          padding: 0;
+          border: none;
+          .blg-img {
+            margin-bottom: 0;
+          }
+          .new-blg-above {
+            border-left: thin solid #ddd;
+            border-right: thin solid #ddd;
+          }
+          .blg-above {
+            padding: 0 $distance2;
+            margin-bottom: 0;
+            h3 {
+              margin-bottom: 8px;
+            }
+            p {
+              margin-top: 0;
+              margin-bottom: 0;
+              text-align: left;
+              font-size: 1rem;
+              letter-spacing: 0.4px;
+            }
+          }
+          .new-fixed-blg {
+            border-left: thin solid #ddd;
+            border-right: thin solid #ddd;
+            border-bottom: thin solid #ddd;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+        }
+        .blg-detail {
+          margin-right: 0;
+          margin-left: 0;
+          padding: 0;
+          .blg-above {
+            padding: $distance2;
+            margin-bottom: 0;
+          }
+          .fixed-blg {
+            padding: $distance2;
+            margin-right: 0;
+            margin-left: 0;
+            .viewers,
+            .blg-below {
+              margin-top: 0;
+              font-size: 1rem;
+            }
+            .viewers {
+              p {
+                font-size: 1rem;
+              }
+              ion-icon {
+                @include size(20px);
+              }
+            }
+            &::before {
+              margin-bottom: $distance2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .older-btn {
+    margin-top: -$distance2;
+  }
+}

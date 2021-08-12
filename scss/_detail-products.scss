@@ -1,0 +1,257 @@
+.header-detail-products {
+  height: var(--navHeight);
+}
+// BREADCRUMB
+ul.breadcrumb {
+  padding: $distance2 0;
+  margin-bottom: 0;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: $font-size2;
+  color: $secondary-color;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  content: "/\00a0";
+  color: $primary-color;
+}
+ul.breadcrumb li a {
+  color: $primary-color;
+}
+ul.breadcrumb li a:hover {
+  color: $secondary-color;
+}
+.detail-products {
+  padding: 0;
+  position: relative;
+  .detail-container {
+    padding: 0;
+    display: flex;
+    margin-top: $distance1;
+    .detail-image {
+      @include flex(center, center);
+      padding: $distance2 $distance1 0 $distance1;
+      img {
+        height: 100%;
+      }
+    }
+    .detail-info {
+      position: relative;
+      padding: 0 $distance1;
+      border-left: 1px solid #ddd;
+      p {
+        color: $primary-color;
+        font-size: $font-size2;
+      }
+      .price {
+        font-size: $font-size3;
+      }
+      h2 {
+        margin-bottom: $distance1;
+        font-size: $font-size4;
+        color: $primary-color;
+      }
+    }
+  }
+  .button-prev-next {
+    width: 100%;
+    display: flex;
+    padding: 0 4px;
+    justify-content: space-between;
+    @include absoluteCenter("top");
+    a {
+      ion-icon {
+        @include size(40px);
+        padding: 4px;
+        border-radius: 50%;
+        color: $primary-color;
+        background-color: rgba($primary-color, 0.05);
+      }
+    }
+  }
+}
+.detail-btn {
+  display: flex;
+  margin-top: $distance2;
+  .quality-btn {
+    color: $primary-color;
+    @include size(120px, 40px);
+    border: thin solid $primary-color;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: $font-size2;
+    margin-right: $distance1;
+    @include flex(center, space-between, row, nowrap);
+    .increase,
+    .decrease,
+    input {
+      width: calc((100% / 3) - 2px);
+      border: none;
+      color: $primary-color;
+      background-color: transparent;
+      padding: 0;
+    }
+    input {
+      text-align: center;
+    }
+  }
+  button.addToCart-btn {
+    width: 220px;
+    border: none;
+    line-height: 38px;
+    border: 1px solid $primary-color;
+    transition-duration: 0.6s;
+    &:hover {
+      @include darken;
+      @include boxShadow;
+      @include easeOut;
+      border: 1px solid $black-lighter;
+    }
+  }
+}
+.cocktail-recipe {
+  h2.relate-tittle {
+    margin-bottom: $distance1;
+  }
+}
+#margin24 {
+  margin-top: 0px;
+}
+.recipe-items a {
+  border: thin solid #ddd;
+}
+.relate-content {
+  border-radius: 2px;
+  transition-duration: 0.6s;
+  flex-direction: column-reverse;
+  h3.pro-name {
+    text-align: center;
+    color: $primary-color;
+  }
+}
+.footer-detail-products {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+}
+:focus {
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+@include tablet {
+  ul.breadcrumb {
+    padding: $distance2;
+  }
+  .detail-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .detail-products {
+    .detail-container {
+      margin-bottom: $distance3;
+      .detail-image {
+        padding: 0;
+        img {
+          width: 50%;
+        }
+      }
+      .detail-info {
+        border-left: none;
+        padding: $distance2;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        h2 {
+          margin-bottom: $distance2;
+        }
+      }
+    }
+    .button-prev-next {
+      padding: 0;
+      top: 20%;
+      a {
+        margin: 0 $distance2;
+      }
+    }
+  }
+  .relate-content {
+    h3.pro-name {
+      margin-bottom: $distance2;
+    }
+  }
+  .cocktail-recipe .recipe-list .recipe-items a .recipe-content h3.pro-name {
+    padding-top: 0;
+    bottom: $distance2;
+  }
+  .cocktail-recipe .relate-tittle {
+    margin-top: 0;
+  }
+}
+@include mobile {
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+  }
+  ul.breadcrumb li + li:before {
+    padding: 4px;
+  }
+  .cocktail-recipe {
+    h2.relate-tittle {
+      margin-bottom: $distance2;
+    }
+  }
+  .detail-products {
+    .detail-container {
+      margin-bottom: $distance1;
+      .detail-info {
+        h2 {
+          font-size: $font-size3;
+          margin-bottom: $distance2;
+        }
+        p.price {
+          font-size: $font-size2;
+        }
+      }
+      .detail-image {
+        img {
+          width: 70%;
+        }
+      }
+    }
+    .button-prev-next {
+      top: 15%;
+      a {
+        margin: 0 $distance2;
+        ion-icon {
+          @include size(28px, 28px);
+        }
+      }
+    }
+    .detail-btn {
+      .quality-btn {
+        width: 160px;
+        max-width: 100%;
+      }
+      button.addToCart-btn {
+        width: 100%;
+      }
+    }
+  }
+}
+@include highResolution {
+  .detail-products .detail-container .detail-image {
+    img {
+      width: 75%;
+    }
+  }
+  .cocktail-recipe .recipe-list .recipe-items a .recipe-content h3.pro-name {
+    padding: $distance2;
+  }
+}

@@ -1,0 +1,186 @@
+$primary-color: #364061;
+$secondary-color: #9a86fd;
+$black-lighter: #242b42;
+$background-color: #f0f5f8;
+$font-size1: 1.1rem;
+$font-size2: 1.2rem;
+$font-size3: 1.6rem;
+$font-size4: 2.5rem;
+$distance1: 32px;
+$distance2: 16px;
+$distance3: 50px;
+
+// RESPONSIVE
+$tablet-width: 768px;
+$desktop-width: 992px;
+
+@mixin mobile {
+    @media screen and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin highResolution {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin titleSection {
+    margin-top: 50px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: $font-size4;
+    text-align: center;
+    color: $primary-color;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($align: flex-start, $justify: flex-start, $dir: row, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin absoluteCenter($direction: "left") {
+    position: absolute;
+
+    @if $direction== "left" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @if $direction== "top" {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @if $direction== "both" {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%, -50%);
+    }
+}
+
+@mixin textShadow {
+    text-shadow: 0px 0px 1px #000;
+}
+
+@mixin boxShadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@mixin darken {
+    background-color: $black-lighter;
+}
+
+@mixin wordBreak {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin wordBreak2 {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin easeOut {
+    transition: all 0.25s ease;
+}
+
+.button-basic {
+    --height: 40px;
+    width: 130px;
+    height: var(--height);
+    display: block;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.button-primary {
+    @extend .button-basic;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    line-height: calc(var(--height) - 2px);
+}
+
+.button-secondary {
+    @extend .button-basic;
+    color: #fff;
+    line-height: var(--height);
+    background-color: $primary-color;
+}
+
+.button-third {
+    @extend .button-basic;
+    color: $primary-color;
+    background-color: #fff;
+    border: 1px solid #fff;
+    line-height: calc(var(--height) - 2px);
+}
+
+.button-fouth {
+    @extend .button-basic;
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid #fff;
+    line-height: calc(var(--height) - 2px);
+}
+
+@mixin marginMd {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@for $x from 1 through 5 {
+    .mobile-items:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
+    }
+}
+
+@keyframes itemHover {
+    from {
+        color: #fff;
+    }
+
+    to {
+        color: $secondary-color;
+    }
+}
+
+@keyframes btnHover {
+    from {
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    to {
+        width: 140px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
