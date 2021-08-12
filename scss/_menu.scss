@@ -47,9 +47,9 @@ header {
           font-weight: 600;
           font-size: $font-size1;
           @include textShadow;
-          transition-duration: .4s;
+          transition-duration: 0.4s;
           &:hover {
-            animation: itemHover .25s ease-out forwards;
+            animation: itemHover 0.25s ease-out forwards;
             text-shadow: initial;
           }
         }
@@ -125,12 +125,12 @@ header {
   }
   .top,
   .bot {
-    transition-duration: .3s;
+    transition-duration: 0.3s;
   }
 
   .mid {
     margin: 5px 0;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
   }
   .mobile-menu {
     top: 0;
@@ -142,7 +142,7 @@ header {
     @include easeOut;
     @include flex(center, center);
     background-color: $primary-color;
-    transition-duration: .4s;
+    transition-duration: 0.4s;
     transform: translate3d(0, -100%, 0);
     z-index: 98;
     &.show {
@@ -159,7 +159,7 @@ header {
     margin: 0;
     padding: 0;
     @include easeOut;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transform: translate3d(600px, 0, 0);
     &.show {
       transform: translate3d(0, 0, 0);
