@@ -85,6 +85,9 @@
   .detail-products .cocktail-button-prev-next {
     top: 180px;
   }
+  .detail-products .cocktail-container .cocktail-info h2 {
+    margin-top: $distance2;
+  }
 }
 @include highResolution {
   .detail-products .cocktail-button-prev-next {

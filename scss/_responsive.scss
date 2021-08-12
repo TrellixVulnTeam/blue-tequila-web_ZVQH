@@ -192,6 +192,9 @@
     .pro-info {
       text-align: left;
       padding: $distance1 $distance2;
+      h2 {
+        margin-top: 0;
+      }
       .pro-btn {
         width: 100%;
         flex-flow: row wrap;

@@ -87,7 +87,7 @@ $desktop-width: 992px;
 }
 
 @mixin wordBreak {
-    word-break: break-all;
+    word-break: break-word;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -96,7 +96,7 @@ $desktop-width: 992px;
 }
 
 @mixin wordBreak2 {
-    word-break: break-all;
+    word-break: break-word;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
