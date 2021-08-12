@@ -131,14 +131,14 @@
       padding-left: $distance2;
       &:focus ~ span {
         left: 31px;
-        transform: translateY(-46px);
+        transform: translateY(-47px);
       }
     }
     span {
       left: 31px;
     }
     ion-icon {
-      right: 21px;
+      right: 31px;
     }
   }
   .intro {

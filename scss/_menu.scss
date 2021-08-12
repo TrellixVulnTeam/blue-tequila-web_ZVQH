@@ -168,12 +168,12 @@ header {
       color: $secondary-color;
     }
     &:last-child {
-      margin-top: 40px;
+      margin-top: $distance2;
     }
     a {
       line-height: 80px;
       color: #fff;
-      font-size: $font-size3;
+      font-size: $font-size2;
       ion-icon {
         margin: 0 $distance2;
         @include size(28px, 28px);
