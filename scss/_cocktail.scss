@@ -3,6 +3,7 @@
     .cocktail-info {
       border: none;
       padding-right: $distance2;
+      padding-top: 0;
       @include flex(flex-start, flex-start, column, nowrap);
       h2 {
         margin-bottom: $distance1;
