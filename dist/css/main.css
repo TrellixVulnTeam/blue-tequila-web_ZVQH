@@ -819,11 +819,13 @@ img:not(.logo a img) {
   position: relative; }
 
 .swiper-container {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .swiper-slide {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 .blog > h2 {
   margin-top: 50px;

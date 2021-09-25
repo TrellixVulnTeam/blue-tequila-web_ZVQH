@@ -130,16 +130,16 @@ img:not(.logo a img) {
 .home-swiper {
   padding: 0;
   position: relative;
+  box-sizing: unset;
 }
 
 .swiper-container {
   position: relative;
-  overflow: hidden;
 }
+
 .swiper-slide {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 // BLOG

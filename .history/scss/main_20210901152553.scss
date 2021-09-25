@@ -134,12 +134,14 @@ img:not(.logo a img) {
 
 .swiper-container {
   position: relative;
-  overflow: hidden;
+}
+.swiper-wrapper {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 .swiper-slide {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 // BLOG
